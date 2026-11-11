@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Drink data lives in `src/lib/menu.ts` and quiz scoring in `src/lib/quiz.ts`; pages read from these so menu changes happen in one place.
+- Cart is in-memory React context (`src/lib/cart.tsx`) mounted in `__root.tsx`; no backend yet, so orders are not saved.
